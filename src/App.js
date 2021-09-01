@@ -1,15 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar/NavBar.js'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="./logo-ecommerce.png" className="logoStarWars"/>
-        <p>
-          Futuro Ecommerce StarWars
-        </p>
+    <div className='App'>
+      <header className='App-header'>
+        <NavBar/> {/* Menu */}
       </header>
+      <div>
+          <h2>Proximamente</h2>
+          <h1>OFERTAS INCREIBLES!</h1>
+      </div>
     </div>
   );
 }

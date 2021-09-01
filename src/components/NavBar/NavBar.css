@@ -1,0 +1,13 @@
+/* ************************** */
+/* ************ MENU********* */
+/* lOGO */
+.d-inline-block.align-text-top{
+    width: 70px;
+}
+
+/* btn login */
+.btn-login{
+    background-color:#DBA90D;
+    border-radius: 10px;
+    color: #000000 !important;
+}
