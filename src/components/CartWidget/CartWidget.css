@@ -1,0 +1,15 @@
+.icon-cart {
+    font-size: 25px;
+    margin: 0 20px;
+    position: relative;
+    padding: 10px;
+}
+.quanty-cart {
+    background: red;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    position: absolute;
+    right: 0px;
+}

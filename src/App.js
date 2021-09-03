@@ -1,5 +1,6 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar.js'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer.js'
 
 const App = () => {
   return (
@@ -8,8 +9,7 @@ const App = () => {
         <NavBar/> {/* Menu */}
       </header>
       <div>
-          <h2>Proximamente</h2>
-          <h1>OFERTAS INCREIBLES!</h1>
+          <ItemListContainer/> {/* Coming Soon */}
       </div>
     </div>
   );
