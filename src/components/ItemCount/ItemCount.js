@@ -19,11 +19,7 @@ const ItemCount = () => {
 
     return (
         <div className="itemList">    
-          <div className="row img-producto">     
-                <div className="col-12">
-                 <p>Imagen</p>
-                </div>  
-          </div>   
+         
           <div className="row"> 
                 <div className="col-4">
                     <button  className="btn-resta" onClick={restarItem}>-</button>

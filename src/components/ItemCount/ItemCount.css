@@ -1,9 +1,4 @@
-.itemList{
-    width: 20%;
-    background-color: #eee;
-    padding: 10px;
-    margin: 20px auto;
-}
+
 .img-producto{
     margin: 20px;
     height: 300px;
@@ -13,13 +8,14 @@
   color: #000;
 }
 .btn-AgregarCarrito{
-    width: 100%;
-    border:0px;
+    width: 90%;
+    border: 0px;
     border-radius: 10px;
     box-shadow: none;
     background-color: #182240;
     color: #fff;
     padding: 5px;
+    margin: 5px;
 }
 .btn-suma,
 .btn-resta {
