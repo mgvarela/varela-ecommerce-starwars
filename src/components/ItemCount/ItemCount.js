@@ -18,7 +18,7 @@ const ItemCount = () => {
 
 
     return (
-        <div className="itemList">    
+        <div className="itemListCount">    
          
           <div className="row"> 
                 <div className="col-4">

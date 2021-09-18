@@ -1,6 +1,7 @@
 import './App.css';
-import NavBar from './components/NavBar/NavBar.js'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer.js'
+import NavBar from './components/NavBar/NavBar.js';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       </header>
       <div>
           <ItemListContainer/> {/* Coming Soon */}
+         <ItemDetailContainer/>
       </div>
     </div>
   );

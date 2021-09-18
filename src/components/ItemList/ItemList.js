@@ -2,45 +2,54 @@ import { useState,useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../index.css'; 
 import './ItemList.css';
-import ItemCount from '../ItemCount/ItemCount';
 
+//import ItemCount from '../ItemCount/ItemCount';
 
-
-
+// FUNCION CARGA ITEMS
+    
+    function getList(){
+        
     const productos = [
         {id:'01',title:'Remera Mangas Cortas Yoda',price:'$2000',pictureUrl:'../../remera-1.png'},
         {id:'02',title:'Camisa Jedi',price:'$3000',pictureUrl:'../../camisa-1.png'},
         {id:'03',title:'Pantalon Deportivo Anakin',price:'$5500',pictureUrl:'../../pantalon-1.png'},
     ]
-    
-    function getList(){
         return new Promise ((resolve, rejetc)=> {
-            setTimeout(()=> resolve(productos),3000)
+            setTimeout(()=> resolve(productos),1000)
         })
     }
-    
-    
+
+
     const ItemList = () => {
-        const [listaProductos, setListaProductos] = useState([])
+       
+        const [Item, setItem] = useState([])
+      
+      
         useEffect(()=> { 
+          
             const lista = getList()
-            lista.then(lista =>{setListaProductos(lista)})},[] )
-    
-        return (      
-            <div className="itemlist row">
-                {listaProductos.map(ropa => 
-                 <div key={ropa.id} className="card card-producto">
-                        <p className="ver-detalle">VER DETALLE DE PRODUCTO</p>
-                        <img className="image-producto card-img-top" src={ropa.pictureUrl}  alt="imagen producto"/>
-                        <div className="card-body">
-                        <h5 className="card-title" key={ropa.id}>{ropa.title}</h5> 
-                        <p className="card-text" key={ropa.id}>{ropa.price}</p>
-                        <div><ItemCount/></div>
-                    </div>
-                </div> )}
-            </div>
-     );
-    }
+            lista.then(lista =>{setItem(lista)})},[] )
+            
+               return (      
+                   <>
+                 
+                       <div className="itemlist row">
+
+                           {Item.map(items => 
+                           <div key={items.id} className="card card-producto">
+                           
+                                   <img className="image-producto card-img-top" src={items.pictureUrl}  alt="imagen producto"/>
+                                   <div className="card-body">
+                                   <h5 className="card-title" key={items.id}>{items.title}</h5> 
+                                   <p className="card-text" key={items.id}>{items.price}</p>
+                                   <button className="ver-detalle">VER DETALLE DE PRODUCTO</button>
+                               </div>
+                           </div> )}
+                       </div>
+                    
+                   </>
+            );
+        }
 
 
 export default  ItemList

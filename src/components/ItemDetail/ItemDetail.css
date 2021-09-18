@@ -1,0 +1,33 @@
+.btnVolverDetail{
+    border: 0;
+    box-sizing: none;
+    box-shadow: none;
+    background: white;
+    text-align: left;
+    color: blue;
+    font-size: 12px;
+}
+.card-detail{
+    display: contents;
+    margin-top: 50px;
+}
+.card-detail .col-6{
+    background: white;
+    padding: 50px 0px;
+}
+.card-img-detail, .card-img-bottom-detail, .card-img-top-detail {
+    width: 50%;
+    margin: 0 auto;
+}
+.ItemDetails {
+    padding: 50px 0px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+ 
+}
+
+.card-title-detail{
+  
+    margin: 0;
+}

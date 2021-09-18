@@ -8,13 +8,13 @@
   color: #000;
 }
 .btn-AgregarCarrito{
-    width: 90%;
+    width: 100%;
+    padding: 10px;
     border: 0px;
     border-radius: 10px;
     box-shadow: none;
     background-color: #182240;
     color: #fff;
-    padding: 5px;
     margin: 5px;
 }
 .btn-suma,
@@ -43,4 +43,11 @@
     height: 40px;
     margin:5px auto;
     justify-content: center;
+}
+.itemListCount{
+    display: inline-flex;
+    align-items: center;
+}
+.itemListCount .row{
+    margin: 20px;
 }
