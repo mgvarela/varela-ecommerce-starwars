@@ -4,10 +4,10 @@ import { useState,useEffect } from "react";
 function getList(){
         
     const productosDetails = [
-        {id:'07',title:'Remera Yoda',price:'$2000',pictureUrl:'../../remera-1.png',stock:'2',description:'Remera de Algodon negra xl'},
+        {id:1,title:'Remera Yoda',price:'$2000',pictureUrl:'../../remera-1.png',stock:'2',description:'Remera de Algodon negra xl'},
     ]
         return new Promise ((resolve, rejetc)=> {
-            setTimeout(()=> resolve(productosDetails),5000)
+            setTimeout(()=> resolve(productosDetails),2000)
         })
     }
 
@@ -23,7 +23,7 @@ function getList(){
                
                 {Item.map(itemsDetail => 
             
-                   <div key={itemsDetail.id} className="card card-detail">
+                   <div className="card card-detail">
                        
                         <div className="col-6">
                          
@@ -33,10 +33,10 @@ function getList(){
                             <div className="card-body">
                             <h4>DETALLE DE PRODUCTO</h4>
                             <h3 className="card-title-detail" key={itemsDetail.id}>{itemsDetail.title}</h3> 
-                            <p className="card-description" key={itemsDetail.id}>{itemsDetail.description}</p> 
-                            <p className="card-text" key={itemsDetail.id}>{itemsDetail.price}</p>
+                            <p className="card-description" >{itemsDetail.description}</p> 
+                            <p className="card-text" >{itemsDetail.price}</p>
                         <ItemCount />                      
-                        <p className="card-stock" key={itemsDetail.id}>{itemsDetail.stock} Unidades disponibles</p>
+                        <p className="card-stock" >{itemsDetail.stock} Unidades disponibles</p>
                         <button className="btnVolverDetail">Volver</button>
                        </div>
                     </div>
